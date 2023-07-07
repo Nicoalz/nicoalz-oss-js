@@ -14,7 +14,8 @@ jobs:
 
       - name: "init node"
         uses: actions/setup-node@v3
-        node-version: "19"
+        with:
+          node-version: "19"
 
       - name: "Install dependecies"
         run: npm install
